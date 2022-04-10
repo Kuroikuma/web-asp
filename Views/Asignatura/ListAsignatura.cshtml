@@ -1,0 +1,12 @@
+@model List<Asignatura>
+
+@{
+    ViewData["Title"] = "Asignatura Page";
+}
+
+<div class="text-center">
+   @foreach (var asignatura in Model)
+   {
+     <partial name="ObjetoEscuelaSimple" model="asignatura" />
+   }
+</div>

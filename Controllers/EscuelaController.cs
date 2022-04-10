@@ -24,6 +24,7 @@ namespace web_asp.Controllers
           escuela.Pais = "Colombia";
           escuela.Ciudad = "Bogota";
           escuela.AñoDeCreación = 2019;
+          escuela.TipoEscuela = TiposEscuela.Secundaria;
           escuela.UniqueId = Guid.NewGuid().ToString();
           return View(escuela);
         }
