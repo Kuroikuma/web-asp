@@ -1,0 +1,18 @@
+@model Escuela 
+
+@{
+    ViewData["Title"] = "Escuela Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Escuela: @Model.Nombre</h1>
+    <p class="lead">
+        <strong>Ciudad: </strong>@Model.Ciudad
+    </p>
+    <p class="lead">
+        <strong>Dirección: </strong>@Model.Pais
+    </p>
+    <p class="lead">
+        <strong>Teléfono: </strong>@Model.AñoDeCreación
+    </p>
+</div>
